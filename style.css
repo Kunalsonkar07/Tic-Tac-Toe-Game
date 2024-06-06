@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgb(5, 173, 173), rgb(96, 96, 248));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+}
+
+p{
+    color: white;
+    background-color: rgba(219, 226, 239, 0.5);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: 2px solid wheat;
+}
+
+.tic-tac-toe{
+    display: grid;
+    width: 90%;
+    max-width: 300px;
+    grid-template-columns: repeat(3,1fr);
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 10px;
+    color: white;
+    aspect-ratio: 1/1;
+    padding: 2rem;
+}
+.box{
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.box1,.box2 ,.box4 ,.box5 {
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.box3 , .box6 {
+    border-bottom: 2px solid white;
+}
+
+.box7 , .box8 {
+    border-right: 2px solid white;
+}
+
+.win{
+    background-color: rgba(7, 245, 7, 0.6);
+}
+
+.btn{
+    all: unset;
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 10px;
+    color: white;
+    padding: 1rem 1.5rem;
+    outline: 2px solid wheat;
+    cursor: pointer;
+    /* display: none; */
+    opacity: 0;
+}
+
+.btn.active{
+    /* display: flex; */
+    opacity: 1;
+}
